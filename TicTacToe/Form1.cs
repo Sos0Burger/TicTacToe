@@ -36,7 +36,7 @@ namespace TicTacToe
             {
                 Whos.Text = "Ходит X";
             }
-        }
+        }//Пишет чей ход
 
         public int TicTacMove()
         {
@@ -48,7 +48,7 @@ namespace TicTacToe
             {
                 return 1;
             }
-        }
+        }//Определяет кто ходит
         public void EndGame()
         {
             Draw();
@@ -82,7 +82,7 @@ namespace TicTacToe
                 RestartButton.Enabled = true;
                 RestartButton.Visible = true;
             }
-        }
+        }//Конец игры
         public void Draw()
         {
             if (button1.BackColor == Color.Yellow ||
@@ -101,7 +101,7 @@ namespace TicTacToe
             {
                 isdraw = true;
             }
-        }
+        }//проверка на ничью
        
 
         public void Restart()
@@ -150,8 +150,8 @@ namespace TicTacToe
             Whos.Text = "Ходит O";
 
             isdraw = false;
-        }
-        public void Check()
+        }// Метод для рестарта игры
+        public void Check()//Проверка на победу
         {
             if ((button1.Text == "O" && button2.Text == "O" && button3.Text == "O")
                 |
